@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing:inherit;
+}
+
+ul[class],
+ol[class]{
+    padding:0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.height{
+  width: 100%;
+  margin-top: 20px;
+  
+  height: 200px;
+  
+}
+
+.ball{
+  left: 50%;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  background-color: red;
+  animation: ball 4s linear infinite;
+  position: absolute;
+}
+
+
+.car{
+  width: 400px;
+  margin-left: calc(100% - 800px);
+  animation: car 4s linear infinite;
+}
+
+
+
+
+@keyframes ball{
+  0%{
+    margin-top: 0;
+  }
+  50%{
+    margin-top: 200px;
+  }
+  100%{
+    margin-top: 0;
+   
+  }
+  
+}
+
+
+@keyframes car{
+  0%{
+    margin-left: calc(100% - 400px);
+  }
+  50%{
+    margin-left: calc(50% - 400px);
+  }
+  100%{
+    margin-left: calc(0% - 400px);
+  }
+}
